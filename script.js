@@ -15,9 +15,16 @@ function animate() {
 
   curScroll = curScroll + easeSpeed * (scrollY - curScroll);
   if (curScroll < 0.01) curScroll = 0;
-  document.getElementById("main").style.transform = `translateY(${
-    curScroll * -1
-  }px)`;
+
+  if (scrollY > innerHeight * 2) {
+    document.getElementById("about-me").style.opacity = "1";
+    document.getElementById("name-profession").style.transform =
+      "translateX(150px)";
+  } else {
+    document.getElementById("about-me").style.opacity = "0";
+    document.getElementById("name-profession").style.transform =
+      "translateX(0px)";
+  }
 }
 
 animate();

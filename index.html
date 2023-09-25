@@ -10,32 +10,76 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+
     <title>laurenz julian, ChE</title>
   </head>
   <body>
-    <div data-scroll-container class="main" id="main">
-      <div id="intro" data-scroll-section>
+    <div class="main" id="main">
+      <div id="intro">
         <div id="sticky">
-          <span id="name">
-            <span id="laurenz">laurenz</span> <span id="julian">julian</span>
-          </span>
-          <div id="professions">
-            <span class="profession-name"> CHEMICAL ENGINEER </span>
-            <span class="profession-name"> PROJECT MANAGEMENT </span>
-            <span class="profession-name"> PROGRAMMER </span>
+          <div id="about-me">
+            <span id="about-title">ABOUT ME</span>
+            <div id="about-description">
+              <span
+                >Having lived a life of simplicity and dreams, I decided to
+                become a Chemical Engineer to pursue my goals and make a
+                difference.</span
+              ><br />
+              <span
+                >Worked in various plants that made a positive impact in my
+                hometown until I decided to take it a step further</span
+              ><br />
+              <span>
+                Currently taking the next step towards owning a business by
+                harnessing my profession.
+              </span>
+            </div>
+          </div>
+          <div id="name-profession">
+            <span id="name">
+              <span id="laurenz">laurenz</span> <span id="julian">julian</span>
+            </span>
+            <div id="professions">
+              <span class="profession-name"> CHEMICAL ENGINEER </span>
+              <span class="profession-name"> PROJECT MANAGEMENT </span>
+              <span class="profession-name"> PROGRAMMER </span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="experience" id="edac" data-scroll-section></div>
-      <div class="experience" id="sec" data-scroll-section></div>
+      <div class="experience">
+        <div id="edac" class="company">
+          <div class="experience-title">
+            <span class="company-name">EDAC Engineer Arabia</span>
+            <span class="position">Technical Engineer</span>
+          </div>
+          <!-- LINE ANIMATION -->
+          <div class="line">
+            <div class="line-animation-edac"></div>
+          </div>
+          <div class="line-border-edac"></div>
+          <div class="company-content">
+            <div class="picture"></div>
+          </div>
+        </div>
+      </div>
+      <div class="experience">
+        <div id="sec" class="company">
+          <div class="experience-title">
+            <span class="company-name"></span>
+            <span class="position"></span>
+          </div>
+          <!-- LINE ANIMATION -->
+          <div class="line">
+            <div class="line-animation-sec"></div>
+          </div>
+          <div class="line-border-sec"></div>
+          <div class="company-content">
+            <div class="picture"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-
-    <script src="locomotive-scroll.min.js"></script>
-    <script>
-      (function () {
-        var scroll = new LocomotiveScroll();
-      })();
-    </script>
   </body>
 </html>
