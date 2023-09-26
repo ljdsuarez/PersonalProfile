@@ -40,6 +40,7 @@ ol[role="list"] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  scroll-snap-points-y: repeat(100vh);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -108,6 +109,19 @@ textarea:not([rows]) {
   flex-direction: row;
   height: 100vh;
   height: 100svh;
+}
+
+#big-title {
+  font-size: 50vh;
+  position: absolute;
+  height: 100vh;
+  height: 100svh;
+  white-space: nowrap;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  z-index: -2;
+  opacity: 5%;
 }
 
 #about-me {
@@ -236,8 +250,8 @@ textarea:not([rows]) {
 /* Experiences */
 
 .experience {
-  height: 200vh;
-  height: 200svh;
+  height: 100vh;
+  height: 100svh;
 }
 
 .line {

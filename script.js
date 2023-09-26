@@ -13,9 +13,6 @@ onscroll = () => {
 function animate() {
   requestAnimationFrame(animate);
 
-  curScroll = curScroll + easeSpeed * (scrollY - curScroll);
-  if (curScroll < 0.01) curScroll = 0;
-
   if (scrollY > innerHeight) {
     document.getElementById("about-me").style.opacity = "1";
     document.getElementById("name-profession").style.transform =
@@ -25,6 +22,7 @@ function animate() {
     document.getElementById("name-profession").style.transform =
       "translateX(0px)";
   }
+        document.getElementById('big-title').style.transform = `translateX(${100-(100*(scrollY/innerHeight))}%)`
 }
 
 animate();
