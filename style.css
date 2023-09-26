@@ -42,10 +42,6 @@ body {
   line-height: 1.5;
 }
 
-body::-webkit-scrollbar {
-  display:none;
-}
-
 /* Set shorter line heights on headings and interactive elements */
 h1,
 h2,
