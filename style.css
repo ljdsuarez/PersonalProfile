@@ -95,8 +95,8 @@ textarea:not([rows]) {
 /* INTRO */
 
 #intro {
-  height: 600vh;
-  height: 600svh;
+  height: 300vh;
+  height: 300svh;
 }
 
 #sticky {
@@ -248,7 +248,7 @@ textarea:not([rows]) {
   overflow: hidden;
   animation: movingLine 20s linear infinite;
 }
-.line-animation-edac {
+.line-animation-black {
   height: 10px;
   width: 100%;
   background-color: black;
@@ -268,7 +268,7 @@ textarea:not([rows]) {
   }
 }
 
-.line-border-edac {
+.line-border-black {
   width: 1px;
   height: 100%;
   background-color: black;
@@ -288,18 +288,64 @@ textarea:not([rows]) {
 .experience-title {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 350px;
   text-align: end;
   margin-right: 10px;
   font-weight: 700;
+  justify-content: center;
 }
 
-.position {
+.position-black {
   margin-top: 50px;
+  transform: translate(50px);
+  color: black;
+  display: flex;
+  flex-direction: column;
 }
 
-.company-name {
+.position-white {
+  margin-top: 50px;
+  transform: translate(50px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-name-black {
   font-size: 50px;
+  transform: translate(50px);
+  color: black;
+}
+
+.company-name-white {
+  font-size: 50px;
+  transform: translate(50px);
+  color: white;
+}
+
+.observing {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.observing.showToLeft {
+  opacity: 1;
+  transform: translate(0px);
+}
+
+.pictures {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.pictures img {
+  height: 150px;
+  width: 250px;
+  border-radius: 10px;
+  transform: translateX(-50px);
 }
 
 #edac {
@@ -310,12 +356,24 @@ textarea:not([rows]) {
   background-color: #14213d;
 }
 
-.line-border-sec {
+#dole {
+  background-color: #0f422c;
+}
+
+#sarangani-province {
+  background-color: #00adf2;
+}
+
+#philbest {
+  background-color: #009aee;
+}
+
+.line-border-white {
   width: 1px;
   height: 100%;
   background-color: rgb(255, 255, 255);
 }
-.line-animation-sec {
+.line-animation-white {
   height: 10px;
   width: 100%;
   background-color: rgb(255, 255, 255);
